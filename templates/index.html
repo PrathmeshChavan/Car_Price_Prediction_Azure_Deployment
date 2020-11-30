@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div>
+		<form action="/predict" , method="POST">
+
+			<center><h1><i><u>Car Price Prediction</u></i></h1></center>
+	<hr><hr>	
+<!----------------------------------YEAR-------------------------------------------------->
+	<center><h2>How Many Years The Car is Used ?</h2></center>
+	<center><h1><input type="text" name="Year"></h1></center>
+
+<!----------------------------------KM-------------------------------------------------->
+	<center><h2>How Many Kilometers Drived?</h2></center>
+	<center><h1><input type="text" name="Kms_Driven"></h1></center>
+
+<!--------------------------------seller_type---------------------------------------------------->
+	
+	<center><h2>To Whom Are You Selling The Car?</h2></center>
+	<center><select name="seller_type"></center><br>
+	<center><option value="Dealer">Dealer</option></center>
+	<center><option value="Individual">Individual</option></center>
+			</select>
+<!--------------------------------transmission---------------------------------------------------->
+
+	<center><h2>Is Your Car Automatic or Manual ?</h2></center>
+	<center><select name="transmission"></center><br>
+	<center><option value="Manual">Manual</option></center>
+	<center><option value="Automatic">Automatic</option></center>
+			</select>
+<!-----------------------------------owners------------------------------------------------->
+
+	<center><h2>How Many owners previously had the car(0, 1, 2 or 3) ?</h2></center>
+	<center><input type="text" name="Owner"></center>
+
+<!------------------------------------Fuel------------------------------------------------>
+	<center><h2>What Is the Fuel type?</h2></center>
+	<center><h1><select id="fuel_Petrol" name="fuel_Petrol"></h1></center>
+	<center><option value="Petrol">Petrol</option></center>
+    <center><option value="Diesel">Diesel</option></center>
+    			</select><br>	
+
+    <center><button type="submit">Calculate the Selling Price</button></center>
+			
+		</form>
+	</div>
+
+
+
+</body>
+</html>
